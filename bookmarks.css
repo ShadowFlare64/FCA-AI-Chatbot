@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #050505;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+button{
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #8f9296;
+}
+
+.toprow{
+    background-color: #262424;
+    padding: 14px 18px;
+}
+
+.title{
+    color: #65bf7b;
+    font-size: 40px;
+}
+
+.return{
+    padding: 10px;
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bookmarkarea{
+    width: min(900px, 90%);
+    margin: 40px auto;
+}
+
+.bookmarkarea h2{
+    margin-bottom: 20px;
+    color: #65bf7b;
+}
+
+.bookmark{
+    background-color: #262424;
+    padding: 16px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    line-height: 1.4;
+    white-space: pre-wrap;
+}
+
+.removebookmark{
+    margin-top: 12px;
+    padding: 7px 10px;
+    font-weight: bold;
+}
+
+.empty{
+    color: #8f9296;
+    font-style: italic;
+}
+
+@media (max-width: 700px){
+    .title{
+        font-size: 28px;
+    }
+
+    .return{
+        float: none;
+        margin-top: 8px;
+    }
+}

@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #050505;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #8f9296;
+}
+
+.toprow{
+    background-color: #262424;
+    padding: 14px 18px;
+}
+
+.title{
+    color: #65bf7b;
+    font-size: 40px;
+}
+
+.topbutton{
+    padding: 10px 10px;
+    float: right;
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.chatarea{
+    flex: 1;
+    padding: 24px 10%;
+    overflow-y: auto;
+}
+
+.message{
+    max-width: 75%;
+    margin: 12px 0;
+    padding: 12px 16px;
+    border-radius: 10px;
+    line-height: 1.4;
+    white-space: pre-wrap;
+}
+
+.user-message{
+    background-color: #65bf7b;
+    color: #050505;
+    margin-left: auto;
+}
+
+.ai-message{
+    background-color: #262424;
+    color: white;
+    margin-right: auto;
+}
+
+.message-actions{
+    margin-top: 8px;
+}
+
+.bookmark-message{
+    padding: 5px 8px;
+    font-size: 12px;
+}
+
+.bottomrow{
+    display: flex;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: #262424;
+    padding: 10px;
+    gap: 8px;
+}
+
+.messageform{
+    flex: 1;
+}
+
+.bottombutton{
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.newmessage{
+    width: 100%;
+    padding: 18px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+.status{
+    color: #8f9296;
+    font-style: italic;
+    margin: 8px 0;
+}
+
+@media (max-width: 800px){
+    .title{
+        font-size: 28px;
+    }
+
+    .topbutton{
+        float: none;
+        margin-top: 8px;
+        font-size: 13px;
+    }
+
+    .bottomrow{
+        flex-wrap: wrap;
+    }
+
+    .messageform{
+        flex-basis: 100%;
+    }
+
+    .message{
+        max-width: 90%;
+    }
+}

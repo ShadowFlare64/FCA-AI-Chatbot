@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Open Chat AI</title>
+
+    <link rel="stylesheet" href="chatbot.css">    
+</head>
+
+<body>
+    <div class="toprow">
+        <h1 class="title">Open Chat AI
+            <button class="aivoice topbutton"><strong>AI Voice</strong></button>
+            <a href="./bookmarks.html"><button class="book topbutton">Bookmarks</button></a>
+            <button class="clear topbutton">Clear Chat</button>
+        </h1>
+    </div>
+
+    <div class="chatarea"></div>
+
+    <footer class="bottomrow">
+        <form class="messageform">
+            <input type="text" class="newmessage" name="newmessage" placeholder="Type a new message" maxlength="2500" required>
+        </form>
+        <button class="speak bottombutton">Speak Message</button>
+        <button class="delete bottombutton">Delete</button>
+        <button class="send bottombutton">Send</button>
+    </footer>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
